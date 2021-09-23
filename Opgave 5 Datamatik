@@ -1,0 +1,35 @@
+class Datamatik{
+static Student theClass[];
+static Student globalClass[];
+
+public static void main(String[] args){
+	Student theClass[] = new Student[10];
+	theClass[0] = new Student ("Anders",19,false,"a");
+	theClass[1] = new Student ("Grand",21,false,"a");
+	theClass[2] = new Student ("August",20,false,"a");
+	theClass[3] = new Student ("Christoffer",24,false,"a");
+	theClass[4] = new Student ("Michael",24,false,"a");
+	theClass[5] = new Student ("Oscar",20,false,"a");
+	theClass[6] = new Student ("Niklas",23,false,"a");
+	theClass[7] = new Student ("William",20,false,"a");
+	theClass[8] = new Student ("Phillip",22,false,"a");
+	theClass[9] = new Student ("Rasmus",25,false,"a");
+	globalClass = theClass.clone();
+	nameTaker();
+	nameFinder("Niklas");
+
+}
+public static void nameTaker(){
+for (int i = 0; i < globalClass.length; i++){
+	System.out.println("Number " + (i+1) + " is " + globalClass[i].name);
+}
+}
+public static void nameFinder(String studentName){
+for (int i = 0; i < globalClass.length; i++){
+	if (globalClass[i].name == studentName){
+		System.out.println(globalClass[i]);
+	}
+}
+}
+
+}
