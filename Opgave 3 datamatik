@@ -1,0 +1,13 @@
+class Datamatik{
+public static void main(String[] args){
+Teacher goodTeacher = new Teacher("Jesper",38,false); //kender ikke den rigtige alder
+Student myself = new Student("Anders",19,false,"a");
+Student studyMember = new Student("Grand",21,false,"a"); //kender stadig ikke den rigtige alder;
+System.out.println(goodTeacher.name);
+System.out.println(myself.name);
+System.out.println(myself.datamatikerTeam);
+System.out.println(studyMember.name);
+System.out.println(studyMember.datamatikerTeam);
+}
+
+}
