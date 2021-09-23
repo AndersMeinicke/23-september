@@ -1,0 +1,33 @@
+/*
+ *
+ * Hvis du kompilerer programmet får du 7 fejl.
+ * Kan du fixe programmet så det kan køre og
+ * outputtet bliver:
+ * "7 is the smallest!"
+ *
+ * 
+ */
+public class Oops {
+	  static int smaller = 0;
+  public static void main(String[] args) {
+    int a = 7;
+    int b = 42;
+    minimum(a,b);
+    if (smaller == b) {
+      System.out.println( b +" is the smallest!");
+    }
+    else if (smaller == a) {System.out.println( a +" is the smallest!");}
+
+  }
+  public static int minimum(int tmpc, int tmpd) {
+  	int c = tmpc;
+  	int d = tmpd;
+    if (c < d) {
+      smaller = c;
+    }
+    else {
+      smaller = d;
+    }
+    return smaller;
+  }
+}
