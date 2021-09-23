@@ -1,0 +1,18 @@
+class Main{
+public static void main(String[] args){
+PrintNothing();
+PrintSomething("Hello");
+PrintNameAndAge("Anders",19);
+
+}
+
+static void PrintNothing(){
+System.out.println("");
+}
+static void PrintSomething(String something){
+System.out.println(something);	
+}
+static void PrintNameAndAge(String name, int age){
+System.out.println("My name is " + name + ", I am " + age + " years old");
+}
+}
